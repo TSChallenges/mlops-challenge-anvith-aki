@@ -16,15 +16,15 @@ def load_model():
     return model
 
 def get_customer_input():
-    credit_score = float(input("Enter credit score: "))
-    age = int(input("Enter age: "))
-    balance = float(input("Enter balance: "))
-    num_of_products = int(input("num_of_products: "))
-    input5 = int(input("input: "))
-    input6 = int(input("input: "))
-    input7 = int(input("input: "))
-    input8 = int(input("input: "))
-    return [[credit_score, age, balance, num_of_products, input5, input6, input7, input8]]
+    credit_score = float(sys.argv[1])
+    input2 = int(sys.argv[2])
+    input3 = float(sys.argv[3])
+    input4 = int(sys.argv[4])
+    input5 = int(sys.argv[5])
+    input6 = int(sys.argv[6])
+    input7 = int(sys.argv[7])
+    input8 = int(sys.argv[8])
+    return [[credit_score, input2, input3, input4, input5, input6, input7, input8]]
 
 def predict_churn(model, customer_data):
     prediction = model.predict(customer_data)
