@@ -28,4 +28,4 @@ jobs:
       run: docker build --no-cache -t churn_model_image .
     
     - name: Run Model
-      run: docker run churn_model_image
+      run: docker run churn_model_image python /src/run_model.py 1 2 3 4 5 6 7 8
