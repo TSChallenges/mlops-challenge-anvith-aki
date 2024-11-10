@@ -9,8 +9,8 @@ sys.path.append(str(root))
 
 def load_model():
     
-    # model_path = '/models/churn_model.pkl' 
-    model_path = '/workspaces/mlops-challenge-anvith-aki/models/churn_model.pkl' 
+    model_path = '/models/churn_model.pkl' 
+    # model_path = '/workspaces/mlops-challenge-anvith-aki/models/churn_model.pkl' 
     with open(model_path, 'rb') as model_file:
         model = pickle.load(model_file)
     return model
